@@ -8,14 +8,16 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Run energy update script
         run: bash time_percentage.sh
-        
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
