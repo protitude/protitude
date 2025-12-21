@@ -1,0 +1,24 @@
+name: Update Energy Level
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour at minute 0
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Run energy update script
+        run: bash time_percentage.sh
+        
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update energy level" && git push)
