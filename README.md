@@ -8,5 +8,5 @@
 
 **Total Distance this week:** 2200 yards
 
-**Hours Worked:** 20
+**Hours Worked:** 27.5
 
