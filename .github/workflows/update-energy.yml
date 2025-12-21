@@ -17,6 +17,8 @@ jobs:
 
       - name: Run energy update script
         run: bash time_percentage.sh
+        env:
+          TZ: America/Denver
 
       - name: Commit and push if changed
         run: |
