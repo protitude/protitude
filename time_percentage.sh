@@ -23,6 +23,6 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Update the README.md file (works on both Linux and macOS)
-sed -i.bak "s/Current Energy: [0-9]\{1,3\}\/100/Current Energy: ${percentage}\/100/" "$SCRIPT_DIR/README.md" && rm "$SCRIPT_DIR/README.md.bak"
+sed -i.bak "s/\*\*Current Energy:\*\* [0-9]\{1,3\}\/100/\*\*Current Energy:\*\* ${percentage}\/100/" "$SCRIPT_DIR/README.md" && rm "$SCRIPT_DIR/README.md.bak"
 
 echo "${percentage}%"
