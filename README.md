@@ -4,9 +4,9 @@
 ### Stats
 **Current Energy:** 80/100
 
-**Days swam this week:** 1
+**Days swam this week:** 2
 
-**Total Distance this week:** 1100 yards
+**Total Distance this week:** 2200 yards
 
-**Hours Worked:** 8
+**Hours Worked:** 12
 
