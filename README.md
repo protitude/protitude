@@ -2,7 +2,7 @@
 <sub>aka CodeMonkey</sub>
 
 ### Stats
-**Current Energy:** 10/100
+**Current Energy:** 0/100
 ![Visual of energy level](energy.svg)
 
 **Days swam this week:** 2
