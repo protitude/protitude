@@ -12,3 +12,8 @@
 
 **Hours Worked:** 12
 
+=== Latest Nuggets Scores ===
+Nuggets: 130
+Mavericks: 131
+
+Nuggets Lost 😿
