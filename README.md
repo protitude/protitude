@@ -1,7 +1,7 @@
 # Miles
 <sub>aka CodeMonkey</sub>
 
-### Stats
+## Stats
 **Current Energy:** 60/100
 
 ![Visual of energy level](energy.svg)
@@ -12,8 +12,9 @@
 
 **Hours Worked:** 12
 
-=== Latest Nuggets Scores ===
-Nuggets: 130
-Mavericks: 131
+##Latest Nuggets Scores
+
+**Nuggets**: 130
+**Mavericks**: 131
 
 Nuggets Lost 😿
