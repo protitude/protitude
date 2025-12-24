@@ -3,6 +3,7 @@
 
 ### Stats
 **Current Energy:** 40/100
+
 ![Visual of energy level](energy.svg)
 
 **Days swam this week:** 2
