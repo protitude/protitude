@@ -25,4 +25,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Update the README.md file (works on both Linux and macOS)
 sed -i.bak "s/\*\*Current Energy:\*\* [0-9]\{1,3\}\/100/\*\*Current Energy:\*\* ${percentage}\/100/" "$SCRIPT_DIR/README.md" && rm "$SCRIPT_DIR/README.md.bak"
 
+# Update the energy.svg file - update both the animation width and display text
+sed -i.bak "s/to { width: [0-9]\{1,3\}%;/to { width: ${percentage}%;/" "$SCRIPT_DIR/energy.svg" && rm "$SCRIPT_DIR/energy.svg.bak"
+sed -i.bak "s/<div id=\"energy\">[0-9]\{1,3\}%<\/div>/<div id=\"energy\">${percentage}%<\/div>/" "$SCRIPT_DIR/energy.svg" && rm "$SCRIPT_DIR/energy.svg.bak"
+
 echo "${percentage}%"
