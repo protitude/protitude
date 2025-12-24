@@ -12,7 +12,7 @@
 
 **Hours Worked:** 12
 
-##Latest Nuggets Scores
+## Latest Nuggets Scores
 
 **Nuggets**: 130
 **Mavericks**: 131
