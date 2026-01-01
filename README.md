@@ -6,15 +6,15 @@
 
 ![Visual of energy level](energy.svg)
 
-**Days swam this week:** 2
+**Days swam this week:** 0
 
-**Total Distance this week:** 2200 yards
+**Total Distance this week:** 0 yards
 
-**Hours Worked:** 12
+**Hours Worked:** 0
 
 ## Latest Nuggets Scores
 
-**Nuggets**: 130
-**Mavericks**: 131
+**Nuggets: 106**
+**Raptors: 103**
 
-Nuggets Lost 😿
+
