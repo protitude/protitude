@@ -37,10 +37,10 @@
         }
         @keyframes fillBar {
           from { width: 0%; }
-          to { width: 20%; }
+          to { width: 10%; }
         }
 			</style>
-      <div id="energy">20%</div>
+      <div id="energy">10%</div>
 		</div>
 	</foreignObject>
 </svg>
