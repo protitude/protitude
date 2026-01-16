@@ -6,11 +6,11 @@
 
 ![Visual of energy level](energy.svg)
 
-**Days swam this week:** 1
+**Days swam this week:** 3
 
-**Total Distance this week:** 1100 yards
+**Total Distance this week:** 3300 yards
 
-**Hours Worked:** 3
+**Hours Worked:** 28
 
 ## Latest Nuggets Scores
 
