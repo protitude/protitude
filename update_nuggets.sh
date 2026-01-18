@@ -1,37 +1,62 @@
 #!/bin/bash
 
+# Script to update README with latest Nuggets score
+# Usage: ./update_nuggets.sh
+
+cd "$(dirname "$0")/balldontlie"
+
+# Fetch latest Nuggets score
 echo "Fetching latest Nuggets score..."
+SCORE_OUTPUT=$(npx tsx fetchNuggetsScore.ts 2>&1)
 
-# Run the nuggets-call script and capture output
-cd nuggets-call
-output=$(npm start 2>&1)
-cd ..
-
-# Extract the individual lines
-nuggets_score=$(echo "$output" | grep "^Nuggets:" | head -1)
-opponent_score=$(echo "$output" | grep -v "^Nuggets:" | grep ":" | head -1)
-result=$(echo "$output" | grep "Nuggets \(Won\|Lost\)")
-
-if [ -z "$nuggets_score" ]; then
-    echo "Failed to fetch Nuggets scores"
-    exit 1
+if [ $? -ne 0 ]; then
+  echo "Failed to fetch Nuggets score"
+  exit 1
 fi
 
-# Update the README - remove everything after "## Latest Nuggets Scores" and add new content
-sed -i '' '/## Latest Nuggets Scores/,$d' README.md
+# Parse the output - expecting two lines:
+# Team 1: Score 1
+# Team 2: Score 2
+TEAM1=$(echo "$SCORE_OUTPUT" | grep -v "^⠋\|^⠙\|^⠹\|^⠸\|^⠼\|^⠴\|^⠦\|^⠧\|^⠇\|^⠏" | head -1 | sed 's/:.*//')
+SCORE1=$(echo "$SCORE_OUTPUT" | grep -v "^⠋\|^⠙\|^⠹\|^⠸\|^⠼\|^⠴\|^⠦\|^⠧\|^⠇\|^⠏" | head -1 | sed 's/.*: //')
+TEAM2=$(echo "$SCORE_OUTPUT" | grep -v "^⠋\|^⠙\|^⠹\|^⠸\|^⠼\|^⠴\|^⠦\|^⠧\|^⠇\|^⠏" | tail -1 | sed 's/:.*//')
+SCORE2=$(echo "$SCORE_OUTPUT" | grep -v "^⠋\|^⠙\|^⠹\|^⠸\|^⠼\|^⠴\|^⠦\|^⠧\|^⠇\|^⠏" | tail -1 | sed 's/.*: //')
 
-# Append the new scores section
-cat >> README.md << EOF
-## Latest Nuggets Scores
+echo "Game retrieved:"
+echo "  $TEAM1: $SCORE1"
+echo "  $TEAM2: $SCORE2"
 
-**$nuggets_score**
-**$opponent_score**
+# Determine result
+if [[ "$TEAM1" == *"Nuggets"* ]]; then
+  NUGGETS_SCORE=$SCORE1
+  OPPONENT_TEAM=$TEAM2
+  OPPONENT_SCORE=$SCORE2
+else
+  NUGGETS_SCORE=$SCORE2
+  OPPONENT_TEAM=$TEAM1
+  OPPONENT_SCORE=$SCORE1
+fi
 
-$result
-EOF
+if [ "$NUGGETS_SCORE" -gt "$OPPONENT_SCORE" ]; then
+  RESULT="Nuggets Won! 🎉"
+else
+  RESULT="Nuggets Lost 😿"
+fi
+
+# Go back to root directory
+cd ..
+
+# Update README.md - replace the Latest Nuggets Scores section
+# Using a temporary file approach for more reliable updates
+awk -v nuggets="$NUGGETS_SCORE" -v opponent="$OPPONENT_TEAM" -v opp_score="$OPPONENT_SCORE" -v result="$RESULT" '
+/^## Latest Nuggets Scores$/ { print; in_section=1; line_num=0; next }
+in_section && /^$/ { print; line_num++; next }
+in_section && line_num == 1 { print "**Nuggets: " nuggets "**"; line_num++; next }
+in_section && line_num == 2 { print "**" opponent ": " opp_score "**"; line_num++; next }
+in_section && /^Nuggets (Won|Lost)/ { print ""; print result; in_section=0; next }
+{ print }
+' README.md > README.md.tmp && mv README.md.tmp README.md
 
 echo ""
-echo "README.md updated successfully with latest Nuggets scores!"
-echo "$nuggets_score"
-echo "$opponent_score"
-echo "$result"
+echo "README.md updated successfully!"
+echo "$RESULT"

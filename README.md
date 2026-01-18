@@ -18,7 +18,8 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 108**
-**Cavaliers: 113**
+**Nuggets: 121**
+**Washington Wizards: 115**
 
-Nuggets Lost 😿
+
+Nuggets Won! 🎉
