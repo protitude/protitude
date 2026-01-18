@@ -11,6 +11,7 @@
 **Total Distance this week:** 5500 yards
 
 **Swim Graph**
+
 ![Swim Activity](swim-graph.svg)
 
 **Hours Worked:** 28
