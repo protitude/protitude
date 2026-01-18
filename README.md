@@ -19,8 +19,6 @@
 ## Latest Nuggets Scores
 
 **Nuggets: 121**
-**npm warn exec The following package was not found and will be installed: tsx@4.21.0**
+**Washington Wizards: 115**
 
-
-
-Nuggets Lost 😿
+Nuggets Won! 🎉
