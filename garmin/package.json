@@ -1,0 +1,12 @@
+{
+  "name": "garmin-swim-tracker",
+  "version": "1.0.0",
+  "description": "Fetch swim data from Garmin Connect",
+  "type": "module",
+  "scripts": {
+    "fetch": "node get-swim-data.js"
+  },
+  "dependencies": {
+    "garmin-connect": "^1.6.2"
+  }
+}

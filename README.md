@@ -14,11 +14,10 @@
 
 ![Swim Activity](swim-graph.svg)
 
-**Hours Worked:** 28
-
 ## Latest Nuggets Scores
 
 **Nuggets: 121**
+
 **Washington Wizards: 115**
 
 

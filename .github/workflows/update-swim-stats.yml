@@ -1,0 +1,44 @@
+name: Update Swim Stats
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Run daily at 10pm MST (5am UTC next day)
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Create Garmin .env file
+        run: |
+          echo "${{ secrets.GARMIN_AUTH }}" > garmin/.env
+
+      - name: Install dependencies
+        run: |
+          cd garmin
+          npm install
+
+      - name: Run swim stats update script
+        run: bash update_swim_stats.sh
+
+      - name: Remove .env file
+        if: always()
+        run: rm -f garmin/.env
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update swim stats" && git push)
