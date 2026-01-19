@@ -16,9 +16,10 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 121**
+**Nuggets: 87**
 
 **Washington Wizards: 115**
 
 
-Nuggets Won! 🎉
+
+Nuggets Lost 😿
