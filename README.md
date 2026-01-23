@@ -16,7 +16,7 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: No game found**
+**Nuggets: 107**
 
 **Washington Wizards: 115**
 
@@ -25,4 +25,5 @@
 
 
 
-Nuggets Lost 😿
+
+Nuggets Won! 🎉
