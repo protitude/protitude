@@ -35,6 +35,17 @@ jobs:
       - name: Run swim stats update script
         run: bash update_swim_stats.sh
 
+      - name: Run swim graph update script (Mondays only)
+        if: github.event.schedule == '0 5 * * *' && format('{0}', github.event.repository.updated_at) != '' || github.event_name == 'workflow_dispatch'
+        run: |
+          # Check if today is Monday (1 = Monday in date command)
+          if [ $(date +%u) -eq 1 ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Running swim graph update (Monday or manual trigger)..."
+            bash update_swim_graph.sh
+          else
+            echo "Skipping swim graph update (not Monday)"
+          fi
+
       - name: Remove .env file
         if: always()
         run: rm -f garmin/.env
@@ -43,5 +54,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md swim-graph.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update swim stats" && git push)
