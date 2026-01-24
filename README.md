@@ -18,13 +18,6 @@
 
 **Nuggets: 102**
 
-**Washington Wizards: 115**
-
-
-
-
-
-
-
+**Milwaukee Bucks: 100**
 
 Nuggets Won! 🎉

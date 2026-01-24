@@ -50,10 +50,12 @@ cd ..
 # Using a temporary file approach for more reliable updates
 awk -v nuggets="$NUGGETS_SCORE" -v opponent="$OPPONENT_TEAM" -v opp_score="$OPPONENT_SCORE" -v result="$RESULT" '
 /^## Latest Nuggets Scores$/ { print; in_section=1; line_num=0; next }
-in_section && /^$/ { print; line_num++; next }
-in_section && line_num == 1 { print "**Nuggets: " nuggets "**"; line_num++; next }
-in_section && line_num == 2 { print "**" opponent ": " opp_score "**"; line_num++; next }
-in_section && /^Nuggets (Won|Lost)/ { print ""; print result; in_section=0; next }
+in_section && line_num == 0 && /^$/ { print; line_num=1; next }
+in_section && line_num == 1 && /^\*\*Nuggets:/ { print "**Nuggets: " nuggets "**"; line_num=2; next }
+in_section && line_num == 2 && /^$/ { print; line_num=3; next }
+in_section && line_num == 3 && /^\*\*.*:/ { print "**" opponent ": " opp_score "**"; line_num=4; next }
+in_section && line_num >= 4 && /^Nuggets (Won|Lost)/ { print ""; print result; in_section=0; next }
+in_section && line_num >= 4 && /^$/ { next }
 { print }
 ' README.md > README.md.tmp && mv README.md.tmp README.md
 
