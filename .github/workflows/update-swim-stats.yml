@@ -22,7 +22,7 @@ jobs:
 
       - name: Create Garmin .env file
         run: |
-          echo "${{ GARMIN_AUTH }}" > garmin/.env
+          echo "$GARMIN_AUTH" > garmin/.env
           ls -al garmin
         env:
           GARMIN_AUTH: ${{ secrets.GARMIN_AUTH }}
