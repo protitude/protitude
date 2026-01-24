@@ -16,9 +16,10 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 107**
+**Nuggets: 102**
 
 **Washington Wizards: 115**
+
 
 
 
