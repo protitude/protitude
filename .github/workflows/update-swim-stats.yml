@@ -27,11 +27,6 @@ jobs:
         env:
           GARMIN_AUTH: ${{ secrets.GARMIN_AUTH }}
 
-      - name: Verify .env file
-        run: |
-          echo "Contents of .env file:"
-          cat garmin/.env
-
       - name: Install dependencies
         run: |
           cd garmin
