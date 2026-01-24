@@ -22,8 +22,15 @@ jobs:
 
       - name: Create Garmin .env file
         run: |
-          echo "${{ secrets.GARMIN_AUTH }}" > garmin/.env
+          echo "${{ GARMIN_AUTH }}" > garmin/.env
           ls -al garmin
+        env:
+          GARMIN_AUTH: ${{ secrets.GARMIN_AUTH }}
+
+      - name: Verify .env file
+        run: |
+          echo "Contents of .env file:"
+          cat garmin/.env
 
       - name: Install dependencies
         run: |
