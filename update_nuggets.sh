@@ -14,6 +14,12 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Check if no game was found
+if echo "$SCORE_OUTPUT" | grep -q "No game found"; then
+  echo "No game found - skipping README update"
+  exit 0
+fi
+
 # Parse the output - expecting two lines:
 # Team 1: Score 1
 # Team 2: Score 2
