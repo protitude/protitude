@@ -16,8 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: No game found**
+**Nuggets: 102**
 
-**No game found: No game found**
+**Milwaukee Bucks: 100**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
+
