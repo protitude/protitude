@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 102**
+**Nuggets: 0**
 
-**Milwaukee Bucks: 100**
+**Memphis Grizzlies: 0**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
