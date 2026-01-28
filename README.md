@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 0**
+**Nuggets: 107**
 
-**Memphis Grizzlies: 0**
+**Detroit Pistons: 109**
 
 Nuggets Lost 😿
 
