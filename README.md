@@ -18,7 +18,7 @@
 
 **Nuggets: 107**
 
-**Detroit Pistons: 109**
+**Brooklyn Nets: 103**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
