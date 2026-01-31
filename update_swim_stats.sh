@@ -43,8 +43,14 @@ echo "  Total distance: $DISTANCE_YARDS yards"
 cd ..
 
 # Update README.md
-sed -i '' "s/\*\*Days swam this week:\*\* .*/\*\*Days swam this week:\*\* $DAYS_SWAM/" README.md
-sed -i '' "s/\*\*Total Distance this week:\*\* .*/\*\*Total Distance this week:\*\* $DISTANCE_YARDS yards/" README.md
+# Use different sed syntax based on OS (macOS vs Linux)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' "s/\*\*Days swam this week:\*\* .*/\*\*Days swam this week:\*\* $DAYS_SWAM/" README.md
+  sed -i '' "s/\*\*Total Distance this week:\*\* .*/\*\*Total Distance this week:\*\* $DISTANCE_YARDS yards/" README.md
+else
+  sed -i "s/\*\*Days swam this week:\*\* .*/\*\*Days swam this week:\*\* $DAYS_SWAM/" README.md
+  sed -i "s/\*\*Total Distance this week:\*\* .*/\*\*Total Distance this week:\*\* $DISTANCE_YARDS yards/" README.md
+fi
 
 echo ""
 echo "README.md updated successfully!"
