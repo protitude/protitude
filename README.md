@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 107**
+**Nuggets: 122**
 
-**Brooklyn Nets: 103**
+**LA Clippers: 109**
 
 Nuggets Won! 🎉
 
