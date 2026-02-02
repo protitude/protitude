@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 122**
+**Nuggets: 111**
 
-**LA Clippers: 109**
+**Oklahoma City Thunder: 121**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
