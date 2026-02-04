@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 111**
+**Nuggets: 121**
 
-**Oklahoma City Thunder: 121**
+**Detroit Pistons: 124**
 
 Nuggets Lost 😿
 
