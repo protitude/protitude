@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 121**
+**Nuggets: 127**
 
-**Detroit Pistons: 124**
+**New York Knicks: 134**
 
 Nuggets Lost 😿
 
