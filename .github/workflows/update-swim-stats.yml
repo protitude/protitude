@@ -2,7 +2,7 @@ name: Update Swim Stats
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Run daily at 10pm MST (5am UTC next day)
+    - cron: '30 5 * * *'  # Run daily at 10:30pm MST (5:30am UTC next day)
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
