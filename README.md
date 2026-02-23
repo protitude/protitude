@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 157**
+**Nuggets: 117**
 
-**Portland Trail Blazers: 103**
+**Golden State Warriors: 128**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
