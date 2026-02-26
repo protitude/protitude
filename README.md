@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 117**
+**Nuggets: 103**
 
-**Golden State Warriors: 128**
+**Boston Celtics: 84**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
