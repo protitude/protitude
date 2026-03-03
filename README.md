@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 108**
+**Nuggets: 128**
 
-**Minnesota Timberwolves: 117**
+**Utah Jazz: 125**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
