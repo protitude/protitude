@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 126**
+**Nuggets: 129**
 
-**Oklahoma City Thunder: 129**
+**Houston Rockets: 93**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
