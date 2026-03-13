@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 129**
+**Nuggets: 136**
 
-**Houston Rockets: 93**
+**San Antonio Spurs: 131**
 
 Nuggets Won! 🎉
 
