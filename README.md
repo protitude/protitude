@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 136**
+**Nuggets: 125**
 
-**San Antonio Spurs: 131**
+**Los Angeles Lakers: 127**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
