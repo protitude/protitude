@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 125**
+**Nuggets: 142**
 
-**Phoenix Suns: 123**
+**Dallas Mavericks: 135**
 
 Nuggets Won! 🎉
 
