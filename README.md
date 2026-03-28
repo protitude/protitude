@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 142**
+**Nuggets: 135**
 
-**Dallas Mavericks: 135**
+**Utah Jazz: 129**
 
 Nuggets Won! 🎉
 
