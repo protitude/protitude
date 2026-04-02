@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 116**
+**Nuggets: 130**
 
-**Golden State Warriors: 93**
+**Utah Jazz: 117**
 
 Nuggets Won! 🎉
 
