@@ -2,7 +2,7 @@
 <sub>aka CodeMonkey</sub>
 
 ## Stats
-**Current Energy:** 40/100
+**Current Energy:** 20/100
 
 ![Visual of energy level](energy.svg)
 
