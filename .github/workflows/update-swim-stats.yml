@@ -34,6 +34,8 @@ jobs:
 
       - name: Run swim stats update script
         run: bash update_swim_stats.sh
+        env:
+          GARMIN_TOKENS: ${{ secrets.GARMIN_TOKENS }}
 
       - name: Run swim graph update script (Mondays only)
         if: github.event.schedule == '0 5 * * *' && format('{0}', github.event.repository.updated_at) != '' || github.event_name == 'workflow_dispatch'
@@ -41,7 +43,7 @@ jobs:
           # Check if today is Monday (1 = Monday in date command)
           if [ $(date +%u) -eq 1 ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "Running swim graph update (Monday or manual trigger)..."
-            bash update_swim_graph.sh
+            GARMIN_TOKENS="${{ secrets.GARMIN_TOKENS }}" bash update_swim_graph.sh
           else
             echo "Skipping swim graph update (not Monday)"
           fi

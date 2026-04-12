@@ -8,8 +8,13 @@ async function getWeeklySwimData() {
   });
 
   try {
-    // Login to Garmin Connect
-    await gcClient.login();
+    // Use pre-generated OAuth tokens to avoid Cloudflare 429 on login
+    if (process.env.GARMIN_TOKENS) {
+      const { oauth1, oauth2 } = JSON.parse(process.env.GARMIN_TOKENS);
+      gcClient.loadToken(oauth1, oauth2);
+    } else {
+      await gcClient.login();
+    }
 
     // Get Monday of current week
     const now = new Date();
