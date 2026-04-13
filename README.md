@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 127**
+**Nuggets: 128**
 
-**Oklahoma City Thunder: 107**
+**San Antonio Spurs: 118**
 
 Nuggets Won! 🎉
 
