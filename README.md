@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 128**
+**Nuggets: 116**
 
-**San Antonio Spurs: 118**
+**Minnesota Timberwolves: 105**
 
 Nuggets Won! 🎉
 
