@@ -18,7 +18,7 @@
 
 **Nuggets: 96**
 
-**Minnesota Timberwolves: 113**
+**Minnesota Timberwolves: 112**
 
 Nuggets Lost 😿
 
