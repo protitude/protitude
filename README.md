@@ -6,9 +6,9 @@
 
 ![Visual of energy level](energy.svg)
 
-**Days swam this week:** 3
+**Days swam this week:** 4
 
-**Total Distance this week:** 2750 yards
+**Total Distance this week:** 3850 yards
 
 **Swim Graph**
 
