@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 98**
+**Nuggets:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)**
 
-**Minnesota Timberwolves: 110**
+**Error: 502 Bad Gateway**
 
 Nuggets Lost 😿
 
