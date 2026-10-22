@@ -7,20 +7,17 @@ async function getDailySwimData() {
     password: process.env.GARMIN_PASSWORD
   });
 
+  // Suppress library console output (login, token refresh) so stdout is only JSON
+  console.log = () => {};
+  console.error = () => {};
+
   try {
     // Use pre-generated OAuth tokens to avoid Cloudflare 429 on login
     if (process.env.GARMIN_TOKENS) {
       const { oauth1, oauth2 } = JSON.parse(process.env.GARMIN_TOKENS);
       gcClient.loadToken(oauth1, oauth2);
     } else {
-      // Suppress console output during login
-      const originalLog = console.log;
-      const originalError = console.error;
-      console.log = () => {};
-      console.error = () => {};
       await gcClient.login();
-      console.log = originalLog;
-      console.error = originalError;
     }
 
     // Get data for the last year
@@ -52,7 +49,7 @@ async function getDailySwimData() {
       dailyData[date] += distanceMeters;
     });
 
-    console.log(JSON.stringify(dailyData));
+    process.stdout.write(JSON.stringify(dailyData) + '\n');
 
   } catch (error) {
     // Write to stderr so it doesn't interfere with JSON output
