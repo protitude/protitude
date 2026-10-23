@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)**
+**Nuggets: 84**
 
-**Error: 502 Bad Gateway**
+**Oklahoma City Thunder: 96**
 
 Nuggets Lost 😿
 
