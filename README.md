@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 127**
+**Nuggets: 110**
 
-**Phoenix Suns: 120**
+**Portland Trail Blazers: 118**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
