@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 110**
+**Nuggets: 128**
 
-**Portland Trail Blazers: 118**
+**Toronto Raptors: 109**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
