@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 128**
+**Nuggets: 114**
 
-**Toronto Raptors: 109**
+**Indiana Pacers: 102**
 
 Nuggets Won! 🎉
 
