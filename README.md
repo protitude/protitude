@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 114**
+**Nuggets: 100**
 
-**Indiana Pacers: 102**
+**Houston Rockets: 110**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
