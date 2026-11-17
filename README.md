@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 116**
+**Nuggets: 105**
 
-**New Orleans Pelicans: 108**
+**Phoenix Suns: 117**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
