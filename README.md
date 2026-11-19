@@ -18,7 +18,7 @@
 
 **Nuggets: 105**
 
-**Phoenix Suns: 117**
+**Boston Celtics: 101**
 
-Nuggets Lost 😿
+Nuggets Won! 🎉
 
