@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 105**
+**Nuggets: 133**
 
-**Boston Celtics: 101**
+**Houston Rockets: 124**
 
 Nuggets Won! 🎉
 
