@@ -16,9 +16,9 @@
 
 ## Latest Nuggets Scores
 
-**Nuggets: 151**
+**Nuggets: 101**
 
-**Chicago Bulls: 145**
+**Dallas Mavericks: 120**
 
-Nuggets Won! 🎉
+Nuggets Lost 😿
 
